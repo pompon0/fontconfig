@@ -13,7 +13,7 @@ cc_library(
     "FONTCONFIG_PATH='\"/etc/fonts\"'",
     "FC_TEMPLATEDIR='\"/usr/share/fontconfig/conf.avail\"'",
   ],
-  srcs = glob(["**/*.c"],exclude=["test/**","meson-cc-tests/**"]),
+  srcs = glob(["src/**/*.c"]),
   deps = [
     "@org_freetype_freetype2//:freetype2",
     "@com_github_libexpat_libexpat//:expat",
